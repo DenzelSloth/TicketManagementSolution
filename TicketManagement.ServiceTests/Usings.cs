@@ -1,0 +1,14 @@
+global using Xunit;
+global using System;
+global using System.Collections.Generic;
+global using ServiceContracts;
+global using Entities;
+global using ServiceContracts.DTO;
+global using Services;
+global using Xunit.Abstractions;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using AutoFixture;
+global using FluentAssertions;
+global using RepositoryContracts;
+global using Moq;

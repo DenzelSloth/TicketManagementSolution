@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketManagement.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:CitiesManager.WebAPI.Controllers.CustomControllerBase">
+            <summary>
+            Custom controller versioning
+            </summary>
+        </member>
+        <member name="T:TicketManagementSolution.WebAPI.Controllers.v1.TicketController">
+            <summary>
+            Ticket REST Controller
+            </summary>\
+        </member>
+        <member name="M:TicketManagementSolution.WebAPI.Controllers.v1.TicketController.#ctor(RepositoryContracts.ITicketRepository)">
+            <summary>
+            Ticket Controller Constructor DI
+            </summary>
+            <param name="ticketsRepository"></param>
+        </member>
+        <member name="M:TicketManagementSolution.WebAPI.Controllers.v1.TicketController.GetTickets">
+            <summary>
+            Get the list of all Tickets.
+            </summary>
+            <returns>list of all Tickets.</returns>
+        </member>
+        <member name="M:TicketManagementSolution.WebAPI.Controllers.v1.TicketController.GetTicket(System.Nullable{System.Int32})">
+            <summary>
+            Get the a Tickets item that matches the Ticket Number.
+            </summary>
+            <param name="ticketNumber">Ticket number to search.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TicketManagementSolution.WebAPI.Controllers.v1.TicketController.PostTicket(ServiceContracts.DTO.TicketAddRequest)">
+            <summary>
+            Insets Ticket into the ticket list.
+            </summary>
+            <param name="ticket">Ticket to be added</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
